@@ -10,7 +10,7 @@ to download it.
 
 ## Install
 
-1. Download `cloud-authn-installer.exe` from the latest release.
+1. Download `manage-key-installer.exe` from the latest release.
 2. Run it. No admin prompt; HKCU + `%LOCALAPPDATA%` only.
 3. The installer:
    - drops the native helper (architecture-matched ARM64 / x86_64) to
@@ -27,7 +27,7 @@ to download it.
 
 ## Uninstall
 
-Run "cloud-authn" from **Apps & Features**. Cleans up everything
+Run "Manage-Key" from **Apps & Features**. Cleans up everything
 including the trust-store cert.
 
 ## Source
