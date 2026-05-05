@@ -1,6 +1,6 @@
-# manag_key
+# Manage-Key
 
-Distribution point for the **cloud-authn** Windows client installer.
+Distribution point for the **Manage-Key** Windows client installer.
 
 ## What's here
 
@@ -32,6 +32,6 @@ including the trust-store cert.
 
 ## Source
 
-The cloud-authn server, extension, native helper, and admin SPA live
+The Manage-Key server, extension, native helper, and admin SPA live
 in a separate repository. See `README-DEPLOY.md` in this release for
 the build + publish flow.
