@@ -2,36 +2,21 @@
 
 Distribution point for the **Manage-Key** Windows client installer.
 
-## What's here
-
-The installer binary itself is **not committed** to git — it's published as
-a release asset. Browse the [latest release](https://github.com/arieo100arieo/manag_key/releases/latest)
-to download it.
-
 ## Install
 
 1. Download `manage-key-installer.exe` from the latest release.
 2. Run it. No admin prompt; HKCU + `%LOCALAPPDATA%` only.
-3. The installer:
-   - drops the native helper (architecture-matched ARM64 / x86_64) to
-     `%LOCALAPPDATA%\cloud-authn-native\`
-   - drops the Chrome extension (unpacked) to
-     `%LOCALAPPDATA%\cloud-authn-extension\`
-   - registers the native messaging host under HKCU
-   - imports the cloud authenticator's TLS root cert into your user
-     trust store via `certutil`
-   - opens a local instructions page that walks you through loading
-     the unpacked extension into Chrome (3 clicks)
+3. Restart Chrome. The Manage-Key extension installs itself from the
+   Chrome Web Store.
 4. Ask your admin for the per-user **onboarding config JSON**. Drop it
    into the extension's onboarding wizard. Done.
 
 ## Uninstall
 
-Run "Manage-Key" from **Apps & Features**. Cleans up everything
-including the trust-store cert.
+Remove **Manage-Key** from **Apps & Features**. Chrome drops the
+extension on its next launch.
 
 ## Source
 
 The Manage-Key server, extension, native helper, and admin SPA live
-in a separate repository. See `README-DEPLOY.md` in this release for
-the build + publish flow.
+in a separate (private) repository.
